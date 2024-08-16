@@ -13,6 +13,7 @@
         table {
            width: 500px;
            border-collapse: collapse;
+           position: relative;
         }
 
         td, th {
@@ -34,6 +35,16 @@
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n) { /* even ou odd = par ou impar */
+            background-color: gray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.839);
         }
         
     </style>
@@ -176,5 +187,5 @@
             </tr>
         </tfoot>
     </table>
-</body>
+  </body>
 </html>
