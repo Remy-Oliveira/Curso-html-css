@@ -7,15 +7,48 @@
 
     <style>
           table {
-            text-align: left; 
+            text-align: left;
+            width: 500px;
+            border-collapse: collapse; 
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px; 
+        }
+
+        th, td {
+            border: 1.5px solid black;
+            padding: 8px;
+        }
+
+        /*.destaque {
+            background-color: yellow;
+        }
+        */
+
+        col.cnome {
+            background-color: yellow;
         }
         
+        col.csexo_idade {
+            background-color: greenyellow;
+        }
+
     </style>
 </head>
 <body>
     <h1>Exercício de Tabela</h1>
 
     <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo_idade" span="2">
+            <col class="cprofissao">
+        </colgroup>
+
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
@@ -28,6 +61,36 @@
             <td>F</td>
             <td>25</td>
             <td>Jornalista</td>
+        </tr>
+        <tr class="destaque">
+            <td>Carla</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Psicoterapeutica</td>
+        </tr>
+        <tr>
+            <td>Roberta</td>
+            <td>F</td>
+            <td>46</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>
+            <td>Marió</td>
+            <td>M</td>
+            <td>37</td>
+            <td>Cantor</td>
+        </tr>
+        <tr class="destaque">
+            <td>Roberto</td>
+            <td>M</td>
+            <td>104</td>
+            <td>Agricultor</td>
+        </tr>
+        <tr>
+            <td>Lindomar</td>
+            <td>M</td>
+            <td>12</td>
+            <td>Gandula</td>
         </tr>
     </table>
 </body>
