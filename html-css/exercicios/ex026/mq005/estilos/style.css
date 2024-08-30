@@ -20,7 +20,7 @@ header > h1 {
 }
 
 menu {
-    display: none;
+    display: block;
 }
 
 menu > ul { list-style-type: none; } /* Tira as bolinhas da lista */ 
@@ -70,5 +70,4 @@ article > p {
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
-
 }
