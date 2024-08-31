@@ -52,7 +52,7 @@ section#login {
     overflow: hidden; /* Arredonda a div e a foto */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.915);
 
-    transition: width 0.8s, height 0.8s;
+    transition: width 0.9s, height 0.9s;
     transition-timing-function: ease;
 }
 
@@ -68,3 +68,10 @@ section#login > div#formulario {
     padding: 10px;
     display: block;
 }
+
+div#formulario {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p { font-size: 0.8em; }
