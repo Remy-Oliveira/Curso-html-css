@@ -51,13 +51,16 @@ section#login {
     border-radius: 20px;
     overflow: hidden; /* Arredonda a div e a foto */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.915);
+
+    transition: width 0.8s, height 0.8s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
     background: #024959 url(../imagens/portrait.jpg) no-repeat;
     background-size: 100%;
-    background-position: center ;
+    background-position: 0px -100px;
     height: 200px;
 }
 

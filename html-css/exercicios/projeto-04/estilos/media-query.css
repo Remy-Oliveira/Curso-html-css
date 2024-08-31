@@ -1,15 +1,49 @@
 @charset "UTF-8";
 
+/* TABLET */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #A5BF99, #024959) ;
+    }
+    
     section#login {
         width: 90vw;
-
     }
 
     section#login > div#imagem {
         float: left;
+        width: 41%;
+        height: 105vh;
+        background-size: cover;
+        background-position: -25px -100px;
     }
 
-    section#
+    section#login > div#formulario {
+        float: right;
+        width: 59%;
+    }
+}
+
+
+/* TV */
+
+@media screen and (min-width: 992px) {
+
+    body {
+        background-image: linear-gradient(to top, #CAA090, #024959) ;
+    }
+
+    section#login {
+        width: 992px;
+    }
+
+    section#login > div#imagem {
+        height: 55%;
+        background-position: 0px -680px;
+    }
+
+    section#login > div#formulario {
+        
+    }
 }
