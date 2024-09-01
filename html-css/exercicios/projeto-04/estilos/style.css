@@ -40,10 +40,6 @@ main {
 }
 
 section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
     background-color: #F2F2F2;
     width: 250px;
@@ -54,6 +50,11 @@ section#login {
 
     transition: width 0.9s, height 0.9s;
     transition-timing-function: ease;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
