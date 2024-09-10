@@ -118,6 +118,7 @@ body {
     text-decoration: underline;
 }
 
+/* 
 @media screen and (orientation: portrait) {
 
     .wrapper h1 {
@@ -134,3 +135,4 @@ body {
     .wrapper .remember-forgot { margin: -3px -20px 25px; }
     
 }
+    */
