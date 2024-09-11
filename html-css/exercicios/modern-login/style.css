@@ -123,34 +123,33 @@ body {
 @media screen and (orientation: portrait) {
 
     .wrapper h1 {
-        font-size: 50px;
+        font-size: 30px;
     }
     
     .wrapper { 
-        width: 400px;
-        height: 72vh;
+        width: 350px;
+        height: 60vh;
     }
 
-    .wrapper .remember-forgot { margin: 100px -20px 12vh; }
+    .wrapper .remember-forgot { margin: 0px -20px 12vh; }
 
-    .remember-forgot a { font-size: 16px; }
+    .remember-forgot a { font-size: 13px; }
 
-    .remember-forgot label { font-size: 16px; }
+    .remember-forgot label { font-size: 13px; }
 
     .wrapper .input-box {
         width: 100%;
-        height: 45px;
         margin-top: 30px;
     }
     
     .wrapper .btn {
-        font-size: 25px;
+        font-size: 17px;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.897), rgb(93, 27, 199));
         color: white;
-        height: 70px;
+        height: 45px;
+    
     }
-
     .input-box input::placeholder {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
