@@ -127,11 +127,12 @@ body {
     }
     
     .wrapper { 
+        position: fixed;
         width: 350px;
-        height: 60vh;
+        height: 50vh;
     }
 
-    .wrapper .remember-forgot { margin: 0px -20px 12vh; }
+    .wrapper .remember-forgot { margin: 0px 0px 20px; }
 
     .remember-forgot a { font-size: 13px; }
 
@@ -147,9 +148,13 @@ body {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.897), rgb(93, 27, 199));
         color: white;
         height: 45px;
-    
     }
+
     .input-box input::placeholder {
         font-size: 15px;
+    }
+
+    .wrapper .register-link {
+        
     }
 }
