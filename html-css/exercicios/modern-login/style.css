@@ -129,7 +129,7 @@ body {
     .wrapper { 
         position: fixed;
         width: 350px;
-        height: 50vh;
+        height: 500px;
     }
 
     .wrapper .remember-forgot { margin: 0px 0px 20px; }
