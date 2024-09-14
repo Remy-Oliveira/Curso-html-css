@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pr-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> + <!-- Caixa para inserção de dados -->
+    <input type="number" name="txtn2" id="txtn2"> <!-- Caixa para inserção de dados -->
+    <input type="button" value="somar" onclick="somar()"> <!-- Botão com a função onclick, ou seja, ao clicar -->
+    <div id="resultado">Resultado</div>
+
+    <script>
+        function somar() {
+            var tn1 = document.getElementById('txtn1') // acessando o botão de id txtn1
+            var tn2 = document.querySelector('#txtn2') // Acessando o botao txtn2 pelo id
+            var resultado = document.getElementById('resultado') // Acessando a div de id resultado
+            var n1 = Number(tn1.value) // Lembrando que o tn1 e tn2 são strings, por isso temos que converter
+            var n2 = Number(tn2.value)
+            var soma = n1 + n2 // Colocando o valor convertido dentro dessa variável
+            resultado.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${soma}</strong>` // Substituindo o texto da div
+        }
+    </script>
+</body>
+</html>
