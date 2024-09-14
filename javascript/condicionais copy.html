@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País Nativo</title>
+    <style>
+        button {
+            background-color: blue;
+            height: 20px;
+            width: 30vw;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="entrada_div">Qual país você vive?</div>
+    <input type="text" name="entrada" id="entrada"> <!--Entrada de texto-->
+    <button onclick="verificar()">BUTAUNZAUN</button> <!--Um botão que dispara o método-->
+    <script>
+        function verificar() {
+            if (document.getElementById('entrada').value == "Brasil") { // Não esqueça de colocar o .value para comparar o valor do elemento
+                document.getElementById('entrada_div').innerText = 'Você é brasileiro'
+            } else {
+                document.querySelector('#entrada_div').innerText = 'Você é gringo!'
+            }
+        }
+    </script>
+</body>
+
+</html>
