@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(95, 95, 232);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p id="paragrafo">Aqui vai um o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <div class="divinha">Paraguai</div>
+
+    <script>
+
+        // DOM (Document Object Model) - Vamos acessar e modificar elementos tanto do HTML (tags, p, div...) quanto do CSS (id, classes, color, background) usando JAvraScript
+
+        
+        var corpo = window.document.body // o body desse nosso index será posto para dentro da variável corpo
+
+        var p1 = document.getElementsByTagName('p')[1] // element'S' ou seja, plural (obrigatório uso de colchetes). O P significa que busco pela tag <p>, que é um parágrafo. Tem que ter os colchetes após os parênteses com o número em ordem referente a tag.  
+
+        document.write(`Está escrito assim: ` + p1.innerText) // Pega o texto cru
+        document.write(`</br>Está escrito assim: ` + p1.innerHTML) // Pega o texto com todas as tags
+        
+        p1.style.color = 'blue' // Modificando a cor da fonte
+        corpo.style.background = 'red' // Modificando a cor de fundo
+        var d = document.getElementById('msg') // Acessando a div com o id msg
+        d.style.background = 'purple' // modificando o background
+        d.innerText = 'Estou aguardando...' // pegando o texto cru
+        //document.getElementById('msg').innerText = 'Olá'
+        document.getElementById('msg').style.background = 'yellow'
+        document.body.style.background = 'gray' // Cor do background do body
+
+        document.querySelector('#msg').style.color = 'red' // Acessando a div pelo ID
+        document.querySelector('.divinha').style.background = 'green' // Acessando a div pela CLASS
+        document.querySelector('#paragrafo').style.color = 'black' // Acessando a tag p pelo ID
+
+    </script>
+</body>
+</html>
