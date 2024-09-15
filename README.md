@@ -18,4 +18,4 @@
 <a href="https://remy-oliveira.github.io/Curso-html-css/html-css/exercicios/modern-login/index.html">Tela de login moderna</a>
 
 
-<a href="https://remy-oliveira.github.io/javascript/exercicio_02/index.html">Verificador de Idade</a>
+<a href="https://remy-oliveira.github.io/Curso-html-css/javascript/exercicio_02/index.html">Verificador de Idade</a>
