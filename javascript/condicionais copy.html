@@ -16,9 +16,10 @@
 </head>
 
 <body>
-    <div id="entrada_div">Qual país você vive?</div>
-    <input type="text" name="entrada" id="entrada"> <!--Entrada de texto-->
-    <button onclick="verificar()">BUTAUNZAUN</button> <!--Um botão que dispara o método-->
+    <div id="entrada_div">Qual país você vive?
+        <input type="text" name="entrada" id="entrada"> <!--Entrada de texto-->
+        <button onclick="verificar()">BUTAUNZAUN</button> <!--Um botão que dispara o método-->
+    </div>
     <script>
         function verificar() {
             if (document.getElementById('entrada').value == "Brasil") { // Não esqueça de colocar o .value para comparar o valor do elemento
