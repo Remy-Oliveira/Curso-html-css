@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condionais</title>
+</head>
+
+<body>
+    <h1>Sistemas de Multas</h1>
+    Velocidade do carro <input type="number" name="velocidade" id="txtvel"> Km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="resultado"></div>
+    <script>
+        function calcular() {
+            var velocidade = Number(document.querySelector('#txtvel').value) // Lembre-se que o input vem como texto, por isso temos que converter o valor para Number
+
+            var resultado = document.getElementById('resultado') // Jogando a div para uma variável
+            resultado.innerHTML = `Sua velocidade atual é de <strong>${velocidade}</strong> Km/h` // Modificando o conteúdo da div
+
+            velocidade > 60 ? resultado.innerHTML += `<br><strong>Multado</strong> por excesso de velocidade.<br>Use sempre o cinto de segurança.` : resultado.innerHTML += '<br>Use sempre o cinto de segurança!'
+        }
+
+    </script>
+</body>
+
+</html>
