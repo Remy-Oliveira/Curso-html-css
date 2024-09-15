@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(75, 75, 75);
+    height: 96.7vh;
+    width: auto;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    width: 400px;
+    height: 420px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+
+
+header {
+    color: white;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+footer {
+    font-style: italic;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.botaozinho {
+    background-color: #555555; /* Cor de fundo inicial */
+    border: none;
+    color: white;
+    padding: 3px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Arredondar os cantos */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.botaozinho:hover {
+    background-color: #000000; /* Cor de fundo ao passar o mouse */
+}
