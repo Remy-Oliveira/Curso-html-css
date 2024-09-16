@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div id="entrada_ano">
+            <p>Digite o ano de Nascimento:</p>
+            <input type="text" name="ano" id="ano-txt">
+        </div>
+        <div id="entrada-sexo">
+            <input type="radio" name="radio_sexo" id="masculino" checked>
+            <p>Masculino</p>
+            <input type="radio" name="radio_sexo" id="feminino">
+            <p>Feminino</p>
+        </div>
+        <input type="button" value="verificar" onclick="vai_pro_java()" id="botaozinho">
+        <div id="resposta">
+            <p></p>  
+        </div>
+    </section>
+    <footer>
+        &copy;Remy Oliveira
+    </footer>
+    <script src="js.js"></script>
+</body>
+
+</html>

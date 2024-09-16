@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body {
+    background-color: blue;
+    height: 100vh;
+
+}
+header {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    margin: auto;
+    height: 430px;
+    padding: 20px;
+}
+
+p {
+    display: inline; /* Deixar o p é uma linha só */
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1/1;   /* deixa a imagem circular*/
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+#resposta {
+    text-align: center;
+}
+
+
+#entrada-sexo {
+    padding: 10px;
+}
+
+#botaozinho {
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    color: white;
+}
+
+#botaozinho:hover{
+    background-color: rgb(0, 0, 0);
+    color: blue;
+}
