@@ -15,15 +15,15 @@
     <section>
         <div>
             <p>Ano de Nascimento:
-                <input type="number" name="txtano" id="txtano">
+                <input type="number" name="txtano" id="txtano"> <!--Essa variável vai capturar o ano-->
             </p>
             <p>Sexo:
-                <input type="radio" name="radiosex" id="masculino" checked>
-                <label for="masculino">Masculino</label>
+                <input type="radio" name="radiosex" id="masculino" checked> <!--radio é a caixa (checkbox) são duas variáveis com o mesmo name e ids diferentes-->
+                <label for="masculino">Masculino</label> <!--Isso é apenas um texto, Label são interessantes pq não pula linha-->
                 <input type="radio" name="radiosex" id="feminino">
                 <label for="feminino">Feminino</label>
             <p>
-                <input type="button" value="verirficar" onclick="verificar()" class="botaozinho">
+                <input type="button" value="verirficar" onclick="verificar()" class="botaozinho"> <!--Botão que dispara uma action veriricar ao ser clicada-->
             </p>
         </div>
         <div id="resultado">
