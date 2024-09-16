@@ -51,7 +51,7 @@ function verificar() {  // função que foi disparada do botão
             }
         }
         resultado.style.textAlign = 'center' // alinhar texto 
-        resultado.innerHTML = `Detectamos um(a) <strong>${genero}</strong> com <strong>${idade}</strong> ano // altera o texto da div por essa interpolação de string!(s).`
+        resultado.innerHTML = `Detectamos um(a) <strong>${genero}</strong> com <strong>${idade}</strong> ano(s).` // altera o texto da div por essa interpolação de string!(s).
         resultado.appendChild(img)
     }
 }
