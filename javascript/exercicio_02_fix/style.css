@@ -16,6 +16,7 @@ section {
     margin: auto;
     height: 430px;
     padding: 20px;
+    border-radius: 10px;
 }
 
 p {
@@ -35,6 +36,7 @@ footer {
     text-align: center;
     padding: 10px;
     color: white;
+    font-style: italic;
 }
 
 #resposta {
