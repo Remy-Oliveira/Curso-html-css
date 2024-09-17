@@ -19,3 +19,5 @@
 
 
 <a href="https://remy-oliveira.github.io/Curso-html-css/javascript/exercicio_02/index.html">Verificador de Idade</a>
+
+<a href="https://remy-oliveira.github.io/Curso-html-css/javascript/exercicio_03/index.html">Super Contador</a>
