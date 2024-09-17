@@ -5,7 +5,7 @@ function chama_java() {
     var mostra_tela = document.getElementById('p_02')
     
     for (contador; contador <= fim; contador = passo) {
-        
+        mostra_tela.innerText = `Remy: ${fim}`
     }
     mostra_tela.innerText = `Remy: ${fim}`
 }
