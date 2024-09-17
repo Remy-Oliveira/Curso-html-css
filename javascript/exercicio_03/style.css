@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    background-color: gray;
+    height: 90vh;
+
+    header {
+        text-align: center;
+    }
+}
+
+section {
+    max-width: 200px;
+    margin: auto;
+    padding: 30px;
+    min-height: 50vh;
+    border-radius: 8px;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.587);
+    background: linear-gradient(to top, rgb(206, 196, 230), rgb(44, 3, 94));
+    color: aliceblue;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+#botaozinho {
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#botaozinho:hover {
+    background-color: rgb(26, 214, 214);
+    transform: scale(1.05);
+}
