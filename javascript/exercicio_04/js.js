@@ -9,7 +9,7 @@ function chama_java() {
         for (var contador = 1; contador <= 10; contador++) {
             var saida = document.createElement('option')
             saida.text = `${multiplicando} x ${contador} = ` + multiplicando * contador
-            resultado.appendChild(saida);
+            resultado.appendChild(saida); //saida esta dentro de resultado = select
         }
     }
 }
