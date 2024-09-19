@@ -1,0 +1,46 @@
+/* Define a fonte e o layout da página para centralizar o conteúdo */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, rgba(255, 0, 225, 0.717), yellow);
+    height: 100dvh;
+}
+
+/* Estiliza o contêiner principal */
+#app {
+    background: linear-gradient(to top, yellow, rgba(255, 0, 225, 0.717));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para dar destaque ao bloco */
+    margin: auto;
+    width: 350px;
+    height: 450px;
+}
+
+#lista {
+    width: 200px;
+    height: 180px;
+}
+
+/* Centraliza o título */
+header {
+    text-align: center;
+}
+
+/* Estiliza a seção de resultados */
+#resultado {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Estilo dos botões */
+button {
+    margin: 10px 0;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}

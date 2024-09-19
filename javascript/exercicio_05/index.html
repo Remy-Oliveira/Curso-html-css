@@ -1,3 +1,24 @@
+<!--Explicação do Código:
+HTML:
+
+Cria a estrutura básica da página com um campo de entrada numérica, botões para adicionar números e finalizar a operação, além de um select que mostra os números adicionados.
+A div resultado será usada para exibir os resultados após a finalização do processo.
+CSS:
+
+Centraliza e estiliza o conteúdo da página, fazendo com que a interface fique mais amigável e visualmente agradável.
+O layout do app tem uma sombra para destacar a área de interação e os botões têm uma aparência simples e intuitiva.
+JavaScript:
+
+O array numeros guarda os números que o usuário adiciona.
+A função adicionar() faz a validação do número inserido:
+Verifica se o número está entre 1 e 100.
+Impede números duplicados.
+Insere o número no select e o armazena no array numeros.
+A função finalizar() faz as seguintes operações:
+Calcula o total de números, o maior, o menor, a soma e a média dos números.
+Exibe esses valores formatados na div resultado.-->
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,29 +26,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analisador de Números</title>
+    <!-- Conexão com o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
+        <!-- Título da aplicação -->
         <h1>Analisador de Números</h1>
     </header>
-    <section>
-        <div id="entrada">
-            <p>Número (entre 1 e 100):
-                <input type="number" id="entrada">
-                <input type="button" value="Adicionar" id="botao" onclick="adicionar()">
-            </p>
-        </div>
-        <select id="selecao" size="7"></select>
-        <div>
-            <input type="button" value="Finalizar" onclick="funcao_principal()">
-            <p id="saida">OPA</p>
-        </div>
+
+    <!-- Bloco principal que contém todos os elementos -->
+    <section id="app">
+
+        <!-- Campo de entrada para o número e botão de adicionar -->
+        <label for="numero">Número (entre 1 e 100):</label>
+        <!-- Input para inserir os números -->
+        <input type="number" id="numero" min="1" max="100">
+        <!-- Botão que aciona a função adicionar() para processar o número inserido -->
+        <button onclick="adicionar()">Adicionar</button>
+
+        <!-- Select onde os números adicionados serão listados -->
+        <select id="lista" size="10"></select>
+
+        <!-- Botão de finalizar que aciona a função finalizar() -->
+        <br>
+        <button onclick="finalizar()">Finalizar</button>
+
+        <!-- Div que irá exibir o resultado após clicar em finalizar -->
+        <div id="resultado"></div>
     </section>
-    <footer>
-        &copy;Remy Oliveira
-    </footer>
-    <script src="js.js"></script>
+
+    <footer>&copy;Remy Oliveira</footer>
+
+    <!-- Conexão com o arquivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 
 </html>
