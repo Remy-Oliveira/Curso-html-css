@@ -1,7 +1,7 @@
 /* Define a fonte e o layout da página para centralizar o conteúdo */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to top, rgba(255, 0, 225, 0.717), yellow);
+    background: linear-gradient(to top, rgb(255, 0, 225), rgb(255, 255, 0));
     height: 100dvh;
 }
 
